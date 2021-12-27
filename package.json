@@ -1,0 +1,37 @@
+{
+  "name": "blink-detection-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development parcel index.html --no-hmr --target browser",
+    "build": "cross-env NODE_ENV=production parcel build index.html --public-url ./"
+  },
+  "author": "Ankur Kedia",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "7.12.0",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.6",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "blink-detection": "^1.2.1",
+    "clang-format": "~1.2.2",
+    "cross-env": "^5.2.0",
+    "eslint": "^4.19.1",
+    "parcel-bundler": "^1.12.4"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "sourceType": "module"
+    }
+  },
+  "eslintIgnore": [
+    "dist/",
+    "node_modules/"
+  ]
+}
